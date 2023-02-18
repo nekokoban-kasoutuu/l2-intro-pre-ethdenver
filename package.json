@@ -2,7 +2,10 @@
   "name": "zksync-hardhat-template",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:matter-labs/zksync-hardhat-template.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matter-labs/zksync-hardhat-template.git"
+  },
   "author": "Antonio <aug@matterlabs.dev>",
   "license": "MIT",
   "devDependencies": {
@@ -14,7 +17,7 @@
     "chai": "^4.3.7",
     "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
-    "hardhat": "^2.12.4",
+    "hardhat": "^2.12.7",
     "mocha": "^10.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4",
@@ -24,5 +27,14 @@
     "test": "NODE_ENV=test hardhat test --network hardhat",
     "deploy": "yarn hardhat deploy-zksync --script deploy-greeter.ts",
     "greet": "yarn hardhat deploy-zksync --script use-greeter.ts"
-  }
+  },
+  "description": "![](./ETHDenver_2023.png)",
+  "bugs": {
+    "url": "https://github.com/matter-labs/zksync-hardhat-template/issues"
+  },
+  "homepage": "https://github.com/matter-labs/zksync-hardhat-template#readme",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": []
 }
